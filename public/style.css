@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#F8F0E5;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    height: 35px;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.2rem;
+    width: 100px;
+    text-align: center;
+    color: black;
+}
+a:hover{
+    border: 2px solid #0F2C59;
+}
+#home{
+    margin-right: 1rem;
+}
+#work{
+    margin-left: 1rem;
+}
+
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:50px;
+
+}
+.border-fill{
+    width: 500px;
+    background-color: #EF9595;
+
+}
+.List{
+    border: 2px solid #0F2C59;
+    padding: 5px;
+    width: 500px;
+}
+.main-heading{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #0F2C59;
+    background-color: #EFB495;
+    color: #168C88;
+}
+.main-heading h1{
+    font-size: 4rem;
+    font-family: 'Kanit', sans-serif;
+
+}
+.add-items{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #0F2C59;
+    margin-top: 10px;
+    height: 50px;
+    background-color: #EFD595;
+    align-items: center;
+}
+
+.add-items input[type="text"]{
+    font-size: 1.3rem;
+}
+.add-items input[type="text"]::placeholder{
+    text-align:center;
+    font-size: 1.3rem;
+}
+.input-text{
+    
+    height: 2rem;
+    width: 430px;
+    margin-right: 10px;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+.plus-image{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: transparent;
+}
+.plus-image:hover{
+    border: 2px solid #0F2C59;
+}
+.tasks{
+    min-height: 500px;
+    border: 2px solid #0F2C59;
+    font-size: 1.5rem;
+    max-height: 500px;
+    overflow: auto;
+    margin-top: 10px;
+    padding-left: 2px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #EBEF95;
+    padding-top: 2px;
+    color: #55168C;
+}
+.task{
+    margin-top: 10px;
+    margin-left: 1%;
+    width: 98%;
+    background-color:#EF9595 ;
+    border: 2px solid #0F2C59;
+}
+.task input{
+    margin-left: 5px;
+}
+.task label{
+    margin-left: 5px;
+}
+input[type="checkbox"]{
+    zoom: 1.2;
+}
+input:checked + label{
+    text-decoration: line-through;
+    opacity: 50%;
+}
+
+@media(max-width:500px){
+    body{
+        border: 1px solid #0F2C59
+    }
+    .border-fill{
+        width: 95%;
+        height: 95%;
+    }
+    .List{
+        width: auto;
+        height: auto;
+    }
+    .input-text{
+        width: 300px;
+    }
+
+
+}
+@media(max-width:386px){
+    .input-text{
+        width: 280px;
+    }
+}
+
+@media(max-width:350px){
+    .input-text{
+        width: 230px;
+    }
+}

@@ -1,0 +1,24 @@
+<%- include("partitions/header.ejs")%>
+<div class="container">
+    <div class="border-fill">
+        <div class="List">
+            <div class="main-heading">
+                <h1>Work List</h1>
+            </div>
+            <div class="add-items">
+                <form action="/add" method="post">
+                    <input type="text"  name="wList" placeholder="Enter your Task" class="input-text">
+                    <input type="submit" value="+" class="plus-image">
+                </form>
+            </div>
+            <div class="tasks">
+                <% for(var i=0;i<workList.length;i++){%>
+                    <div class="task">
+                        <input type="checkbox" name="task-box">
+                        <label for="task-name"><%-workList[i] %></label><br>
+                    </div>
+                <%}%>
+            </div>
+        </div>
+    </div>
+</div>
